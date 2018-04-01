@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>617</width>
+    <width>742</width>
     <height>458</height>
    </rect>
   </property>
@@ -17,7 +17,7 @@
    <widget class="QPushButton" name="pushButtonBuscar">
     <property name="geometry">
      <rect>
-      <x>420</x>
+      <x>540</x>
       <y>340</y>
       <width>75</width>
       <height>23</height>
@@ -30,27 +30,17 @@
    <widget class="QLineEdit" name="lineEditWord">
     <property name="geometry">
      <rect>
-      <x>460</x>
+      <x>570</x>
       <y>280</y>
       <width>113</width>
       <height>20</height>
      </rect>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEditTweets">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>40</y>
-      <width>371</width>
-      <height>341</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButtonMostrar">
     <property name="geometry">
      <rect>
-      <x>520</x>
+      <x>650</x>
       <y>340</y>
       <width>75</width>
       <height>23</height>
@@ -66,7 +56,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>617</width>
+     <width>742</width>
      <height>21</height>
     </rect>
    </property>

@@ -22,7 +22,7 @@ void MainWindow::on_pushButtonBuscar_clicked()
 
     QFile write("C:/Users/jufer/Documents/Proyecto/JavaApplicationTwitter/word.txt");
     if(!write.open(QIODevice::WriteOnly | QIODevice::Text)) {
-        ui->textEditTweets->append("No sirve escribir");
+        //ui->textEditTweets->append("No sirve escribir");
         return;
     }
     QTextStream out(&write);
@@ -39,14 +39,14 @@ void MainWindow::on_pushButtonMostrar_clicked()
     //ahora que ya se ha ejecutado el .jar, vamos a leer los tweets que se guardaron en tweets.txt
     QFile file("C:/Users/jufer/Documents/Proyecto/JavaApplicationTwitter/tweets.txt");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        ui->textEditTweets->append("No sirve leer");
+        //ui->textEditTweets->append("No sirve leer");
         return;
     }
 
     QTextStream in(&file);
     while (!in.atEnd()) {
         QString line = in.readLine();
-        ui->textEditTweets->append(line);
+        //ui->textEditTweets->append(line);
     }
     file.close();
 }

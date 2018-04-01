@@ -59,7 +59,6 @@ public class JavaApplicationTwitter {
         String fileWord;
         //String fileWord = JOptionPane.showInputDialog(null, "Palabra que "
                 //+ "desea buscar");
-        Scanner input = new Scanner(System.in);
         /*if (json1.exists()){
               json1 = new File("");
               for (int i = 0; i < contas; i++) {
@@ -100,10 +99,9 @@ public class JavaApplicationTwitter {
         //System.out.println(usuario);
         
             for (Status status : statuses) {
-                System.out.println(status.getUser().getScreenName()+"<<<  >>> "+status.getText()+"<<<  >>> "+status.getUser().getTimeZone()
-                        +"<<<  >>> "+status.getUser().getName());
-                fw.write(status.getUser().getScreenName()+"<<<  >>> "+status.getText()+"<<<  >>> "+status.getUser().getTimeZone()
-                        +"<<<  >>> "+status.getUser().getName());
+                //System.out.println(status.getUser().getScreenName()+"<<<  >>> "+status.getText()+"<<<  >>> "+status.getUser().getTimeZone()
+                        //+"<<<  >>> "+status.getUser().getName());
+                fw.write(">>>"+status.getText()+">>>");
                 //obj.put(status.getUser().getScreenName(), status.getText());//coloco los datos en el archivo json
             }
             
@@ -149,7 +147,6 @@ public class JavaApplicationTwitter {
         }
         
     */
-        String asd = input.nextLine();
     }
     
 }
