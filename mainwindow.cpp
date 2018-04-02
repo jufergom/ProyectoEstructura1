@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+using namespace std;
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -44,9 +46,15 @@ void MainWindow::on_pushButtonMostrar_clicked()
     }
 
     QTextStream in(&file);
+    /*
     while (!in.atEnd()) {
         QString line = in.readLine();
         //ui->textEditTweets->append(line);
     }
+    */
+    QString line = in.readLine();
+    QByteArray array = line.toLatin1();
+    char *hola = array.data();
+    cout << hola[3] << endl;
     file.close();
 }
