@@ -101,7 +101,7 @@ public class JavaApplicationTwitter {
             for (Status status : statuses) {
                 //System.out.println(status.getUser().getScreenName()+"<<<  >>> "+status.getText()+"<<<  >>> "+status.getUser().getTimeZone()
                         //+"<<<  >>> "+status.getUser().getName());
-                fw.write(">>>"+status.getText()+">>>");
+                fw.write(status.getText()+"\r\n");
                 //obj.put(status.getUser().getScreenName(), status.getText());//coloco los datos en el archivo json
             }
             

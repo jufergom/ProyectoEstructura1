@@ -50,6 +50,16 @@
      <string>Mostrar</string>
     </property>
    </widget>
+   <widget class="QTextEdit" name="textEditPrueba">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>60</y>
+      <width>231</width>
+      <height>301</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

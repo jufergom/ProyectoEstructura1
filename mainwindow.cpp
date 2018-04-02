@@ -52,9 +52,19 @@ void MainWindow::on_pushButtonMostrar_clicked()
         //ui->textEditTweets->append(line);
     }
     */
-    QString line = in.readLine();
+    QString line = in.readLine(); //se lee la linea
     QByteArray array = line.toLatin1();
+    QString word = ""; //a esta variable se le ira agregando caracter por caracter lo leido en el txt
     char *hola = array.data();
-    cout << hola[3] << endl;
+    for(int i = 0; i < 45; i++) {
+        QChar ch(hola[i]);
+        word += ch;
+        if(ch == " ") {
+            ui->textEditPrueba->append(word);
+            word = "";
+        }
+
+
+    }
     file.close();
 }
