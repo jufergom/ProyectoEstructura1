@@ -15,7 +15,8 @@ private:
 public:
     Edge();
     ~Edge();
-
+    Vertex *getOrigin();
+    Vertex *getDestiny();
 };
 
 #endif // EDGE_H

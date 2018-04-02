@@ -21,6 +21,8 @@ public:
     void addVertex(QString, QLabel *);
     void addEdge(QString vertex1, QString vertex2, int weight);
     void addEdge(Vertex *origin, Vertex *destiny, int weight);
+    int getVertexAmount();
+    QVector<Vertex *> getVertices();
     //void dibujarAristas(QPainter painter, QPoint p1, QPoint p2);
 };
 

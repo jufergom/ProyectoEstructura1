@@ -5,6 +5,8 @@ Graph::Graph()
     vertexAmount = 0;
 }
 
+
+
 void Graph::addVertex(QString key, QLabel *label)
 {
     vertices.push_back(new Vertex(key, label, vertexAmount));
@@ -46,4 +48,14 @@ void Graph::addEdge(Vertex *origin, Vertex *destiny, int weight)
     edge->destiny = destiny;
     edge->weight = weight;
     origin->edges.push_back(edge);
+}
+
+int Graph::getVertexAmount()
+{
+    return vertexAmount;
+}
+
+QVector<Vertex *> Graph::getVertices()
+{
+    return vertices;
 }

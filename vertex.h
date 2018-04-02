@@ -21,6 +21,7 @@ public:
     ~Vertex();
     int getX();
     int getY();
+    QVector<Edge *> getEdges();
 };
 
 #endif // VERTEX_H
